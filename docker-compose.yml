@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  chatbot:
+    build: .
+    volumes:
+      - '.:/home/opt/chatbot'
+    ports: 
+      - '1234:1234'
+    restart: unless-stopped
